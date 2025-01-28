@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.amplop {
+  background-image: url('/images/couple-2.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#quote {
+  background-image: url('/images/bg-quote.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.shadow-1 {
+  box-shadow: -10px 10px 20px rgba(121, 121, 121, 0.2);
+}
+
+.shadow-2 {
+  box-shadow: -10px 10px 20px rgba(121, 121, 121, 0.2);
+}
+
+#liveStreaming {
+  background-image: url('/images/bg-live.webp');
+  background-position: center;
+  background-size: cover;
+}
