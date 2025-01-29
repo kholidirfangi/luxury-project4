@@ -51,7 +51,7 @@ const BankCard = memo(({ bankName, accountNumber, accountHolder }) => {
 
   return (
     <div
-      className="shadow-lg bg-yellow-50/50 rounded-lg py-3 flex flex-col gap-2 mb-5"
+      className="shadow-lg bg-purple-50/50 rounded-lg py-3 flex flex-col gap-2 mb-5"
       data-testid="bank-card"
     >
       <h3 className="font-bold text-xl mb-5">{bankName}</h3>
@@ -59,7 +59,7 @@ const BankCard = memo(({ bankName, accountNumber, accountHolder }) => {
       <p>A.N {accountHolder}</p>
       <button
         onClick={handleCopy}
-        className="bg-yellow-950 hover:bg-yellow-950/50 w-32 text-neutral-100 mx-auto rounded-full text-sm py-2 transition-colors"
+        className="bg-purple-950 hover:bg-purple-950/50 w-32 text-neutral-100 mx-auto rounded-full text-sm py-2 transition-colors"
         aria-label={`Copy ${bankName} account number`}
       >
         <FontAwesomeIcon icon={faCopy} className="mr-3" aria-hidden="true" />
@@ -97,21 +97,21 @@ const Gift = () => {
   return (
     <section
       id="gift"
-      className="py-20 bg-yellow-900/80 px-5 text-center text-yellow-950"
+      className="font-arima py-20 bg-purple-900/80 px-5 text-center text-purple-950"
     >
       <h1
         data-aos="fade-down"
-        className="text-3xl font-cinzel font-bold mb-5 text-yellow-50"
+        className="text-3xl  font-bold mb-5 text-purple-50"
       >
         Wedding Gift
       </h1>
-      <p data-aos="fade-down" className="text-yellow-50">
+      <p data-aos="fade-down" className="text-purple-50">
         Bagi Bapak/Ibu/Saudara/i ingin mengirimkan hadiah pernikahan dapat
         melalui virtual account di bawah ini:
       </p>
       <button
         data-aos="fade-down"
-        className="my-5 border-2 py-1 px-4 rounded-full bg-yellow-50 hover:bg-yellow-950 hover:text-yellow-50 transition-colors"
+        className="flex justify-center items-center my-5 border-2 py-1 px-4 rounded-full bg-purple-50 hover:bg-purple-950 hover:text-purple-50 transition-colors mx-auto"
         onClick={toggleBankList}
         aria-expanded={isClick}
         aria-controls="creditCard"

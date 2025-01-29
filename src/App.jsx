@@ -29,7 +29,7 @@ const App = () => {
         <LoveStory />
         <Gallery />
         <Gift />
-        <Rsvp collectionName={'luxury-demo2'} />
+        <Rsvp collectionName={'luxury-demo3'} />
         <Thankyou />
         <Footer />
       </div>

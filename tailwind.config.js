@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        cinzel: ['"Cinzel", serif'],
-        lato: ['"Lato", serif'],
+        arima: ['"Arima", serif'],
+        cormorant: ['"Cormorant", serif'],
       },
     },
   },

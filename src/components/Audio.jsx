@@ -31,7 +31,7 @@ const Audio = ({ isPlaying, setIsPlaying, show }) => {
       id="audioContainer"
       className={`fixed ${
         show ? 'block' : 'hidden'
-      } bottom-10 right-3 cursor-pointer z-50 text-yellow-700 ${
+      } bottom-10 right-3 cursor-pointer z-50 text-purple-500 ${
         isPlaying ? 'animate-spin' : ''
       }`}
       onClick={handlePlay}

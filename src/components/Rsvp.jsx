@@ -98,25 +98,22 @@ const Rsvp = ({ collectionName }) => {
   };
 
   return (
-    <div className="w-full mx-auto bg-yellow-950 px-5 py-20">
+    <div className="w-full mx-auto bg-gradient-to-b from-purple-900/80 to-purple-700/80 px-5 py-20 font-arima">
       <h2
         data-aos="fade-down"
         id="message"
-        className="text-3xl font-cinzel font-bold text-center mb-10 text-yellow-50"
+        className="text-3xl font-bold text-center mb-10 text-purple-50"
       >
         Guest Book
       </h2>
       <form data-aos="fade-up" onSubmit={handleSubmit}>
         <div className="w-full">
           <div>
-            <label
-              htmlFor="name"
-              className="w-2/6 inline-block text-yellow-50"
-            >
+            <label htmlFor="name" className="w-2/6 inline-block text-purple-50">
               Nama
             </label>
             <input
-              className="w-4/6 p-1 rounded-sm outline-yellow-950/50 mb-2"
+              className="w-4/6 p-1 rounded-sm outline-purple-950/50 mb-2"
               id="name"
               type="text"
               value={name}
@@ -128,7 +125,7 @@ const Rsvp = ({ collectionName }) => {
           <div>
             <label
               htmlFor="absensi"
-              className="w-2/6 inline-block text-yellow-50"
+              className="w-2/6 inline-block text-purple-50"
             >
               Kehadiran
             </label>
@@ -146,9 +143,9 @@ const Rsvp = ({ collectionName }) => {
           </div>
 
           <div className="flex">
-            <div className="w-2/6 text-yellow-50">Pesan</div>
+            <div className="w-2/6 text-purple-50">Pesan</div>
             <textarea
-              className="p-1 rounded-sm outline-yellow-950/50 w-4/6 mb-2"
+              className="p-1 rounded-sm outline-purple-950/50 w-4/6 mb-2"
               rows={6}
               cols={25}
               name="message"
@@ -159,7 +156,7 @@ const Rsvp = ({ collectionName }) => {
           </div>
         </div>
         <button
-          className="bg-yellow-800 p-2 rounded-full text-yellow-50 w-full mt-2 md:mt-8 md:p-4 hover:bg-yellow-700"
+          className="bg-purple-800 p-2 rounded-full text-purple-50 w-full mt-2 md:mt-8 md:p-4 hover:bg-purple-700"
           type="submit"
         >
           Kirim
@@ -175,31 +172,31 @@ const Rsvp = ({ collectionName }) => {
             if (index !== -1) {
               return (
                 <li
-                  className="flex gap-3 py-4 px-2 border-b-2 border-b-yellow-800/50 rounded-b-lg"
+                  className="flex gap-3 py-4 px-2 border-b-2 border-b-purple-800/50 rounded-b-lg"
                   key={index}
                 >
                   <div>
-                    <div className="w-10 h-10 rounded-full bg-pink-500 flex justify-center items-center mt-2 text-xl font-bold text-yellow-50">
+                    <div className="w-10 h-10 rounded-full bg-pink-500 flex justify-center items-center mt-2 text-xl font-bold text-purple-50">
                       {data.name.slice(0, 1).toUpperCase()}
                     </div>
                   </div>
                   <div>
                     <div className="flex gap-2 ">
-                      <div className="text-lg font-semibold text-yellow-50">
+                      <div className="text-lg font-semibold text-purple-50">
                         {data.name}
                       </div>
-                      <div className="text-xs bg-yellow-800 text-yellow-50 py-1 px-2 font-semibold rounded-sm mb-2">
+                      <div className="text-xs bg-purple-800 text-purple-50 py-1 px-2 font-semibold rounded-t-full rounded-br-full mb-2">
                         {data.attendance}
                       </div>
                     </div>
-                    <div className="text-yellow-50">{data.message}</div>
+                    <div className="text-purple-50">{data.message}</div>
                     <div className="flex items-center gap-2 mt-2">
                       <FontAwesomeIcon
                         icon={faClock}
                         size="xs"
-                        className="text-yellow-500"
+                        className="text-purple-200"
                       />
-                      <div className="text-xs text-yellow-500">
+                      <div className="text-xs text-purple-200">
                         {getDaysSince(data.timestamp)}
                       </div>
                     </div>

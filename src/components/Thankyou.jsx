@@ -1,59 +1,51 @@
-/* eslint-disable react/no-unknown-property */
-import { useEffect, useMemo, useState } from 'react';
+import Slider from 'react-slick';
+import { useMemo } from 'react';
 
 const Thankyou = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const images = useMemo(
     () => [
-      './images/couple-1.webp',
-      './images/couple-2.webp',
-      './images/couple-3.webp',
+      './images/landscape-1.webp',
+      './images/landscape-2.webp',
+      './images/landscape-3.webp',
     ],
     []
   );
 
-  // Image Slider Effect
-  useEffect(() => {
-    const imageInterval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000);
-
-    return () => clearInterval(imageInterval);
-  }, [images.length]);
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 3000,
+    cssEase: 'ease-in-out',
+    arrows: false,
+    lazyLoad: 'progressive',
+    pauseOnHover: false,
+  };
   return (
-    <section id="thankyou" className="text-center relative">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 w-full h-full transition-all duration-[2000ms] ease-in-out
-            ${
-              index === currentImageIndex
-                ? 'opacity-100 scale-100'
-                : 'opacity-0 scale-105'
-            }`}
-        >
-          <div className="relative w-full h-full overflow-hidden">
+    <section
+      id="thankyou"
+      className="text-center relative font-arima h-96"
+    >
+      <Slider {...settings} className="w-full h-full">
+        {images.map((img, index) => (
+          <div key={img}>
             <img
-              src={image}
-              alt={`Slide ${index + 1}`}
-              className={`object-cover w-full h-full transform transition-all duration-[3000ms] ease-in-out will-change-transform
-                ${
-                  index === currentImageIndex
-                    ? 'scale-100 blur-0'
-                    : 'scale-105 blur-sm'
-                }`}
-              lazyload="true"
+              src={img}
+              alt={`photo ${index + 1}`}
+              className="w-full h-96 object-cover"
+              loading="lazy"
+              decoding="async"
             />
-            <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_40%,rgba(0,0,0,0.4)_60%,rgba(0,0,0,0.8)_100%)] transition-opacity duration-[2000ms] ease-in-out" />
           </div>
-        </div>
-      ))}
-      <div className="relative text-neutral-100 bg-black/40 w-full px-5 py-32">
-        <div data-aos="fade-up">
-          <h1 className="font-cinzel text-3xl  font-bold mb-10">Terimakasih</h1>
+        ))}
+      </Slider>
+
+      <div className="absolute top-0 bottom-0 text-neutral-100 bg-black/50 w-full px-5 py-14 z-20">
+        <div data-aos="fade-up" className='px-5'>
+          <h1 className="text-3xl mb-5 font-bold">Terimakasih</h1>
           <p>
             {`Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do'a restu kepada kami.`}
           </p>

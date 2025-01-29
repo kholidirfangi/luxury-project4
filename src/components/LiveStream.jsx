@@ -2,9 +2,9 @@ const LiveStream = () => {
   return (
     <section
       id="liveStreaming"
-      className="relative px-5 text-center py-14 text-neutral-200"
+      className="relative px-5 text-center py-14 text-neutral-200 font-arima "
     >
-      <h1 data-aos="fade-down" className="font-cinzel text-3xl mb-5 font-bold">
+      <h1 data-aos="fade-down" className="text-3xl mb-5 font-bold">
         Live Streaming
       </h1>
       <p data-aos="fade-down">
@@ -13,7 +13,7 @@ const LiveStream = () => {
       </p>
       <button
         data-aos="fade-down"
-        className="border-2 px-4 py-1 mt-5 rounded-sm hover:bg-yellow-50 hover:text-neutral-700"
+        className="border-2 px-4 py-1 mt-5 rounded-full hover:bg-purple-50 hover:text-purple-700"
       >
         <a href="">Tonton Live Streaming</a>
       </button>

@@ -28,18 +28,16 @@ const BASE_SETTINGS = {
 
 // Memoized Profile Component
 const Profile = memo(({ name, fatherName, motherName, instagramLink }) => (
-  <div data-aos="fade-up" className={`text-center`}>
-    <h1 className="mt-12 font-cinzel font-bold text-2xl mb-3 text-yellow-950">
-      {name}
-    </h1>
-    <h4 className="text-yellow-950">Anak Pertama Dari:</h4>
-    <h4 className="text-yellow-950">
+  <div data-aos="fade-up" className={`text-center font-arima`}>
+    <h1 className="mt-12 font-bold text-2xl mb-3 text-purple-50">{name}</h1>
+    <h4 className="text-purple-50">Anak Pertama Dari:</h4>
+    <h4 className="text-purple-50">
       Bapak {fatherName} dan Ibu {motherName}
     </h4>
     <div className="flex justify-center">
       <a
         href={instagramLink}
-        className="bg-yellow-950 w-32 text-white py-1 rounded-full mt-5 flex items-center justify-center hover:bg-yellow-600 transition-colors"
+        className="bg-purple-950 w-32 text-white py-1 rounded-full mt-5 flex items-center justify-center hover:bg-purple-600 transition-colors"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -90,12 +88,13 @@ const BrideAndGroom = () => {
   );
 
   return (
-    <section className="py-20 flex flex-col gap-5 bg-yellow-100/50">
+    <section className="relative -mt-10 rounded-t-[32px] z-40 py-20 flex flex-col gap-5 bg-gradient-to-b from-purple-800 to-purple-400">
+      <div className="h-1 w-20 bg-purple-50 rounded-full mx-auto -mt-16 mb-10"></div>
       {/* Bride Section */}
       <div>
-        <div className="w-56 mx-auto relative overflow-hidden rounded-tl-[150px]">
+        <div className="w-56 mx-auto relative overflow-hidden rounded-t-[150px]">
           <div
-            className="absolute z-50 -right-16 top-1/2 -translate-y-1/2 rotate-90 text-3xl font-cinzel font-semibold  text-yellow-50"
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 z-50 text-puple-950 font-cormorant font-bold text-xl bg-purple-200/50 w-full text-center"
             style={{ willChange: 'transform' }}
           >
             THE BRIDE
@@ -112,9 +111,9 @@ const BrideAndGroom = () => {
 
       {/* Groom Section */}
       <div className="w-full flex flex-col items-center mt-10">
-        <div className="w-56 mx-auto relative overflow-hidden rounded-tr-[150px]">
+        <div className="w-56 mx-auto relative overflow-hidden rounded-t-[150px]">
           <div
-            className="absolute z-50 -left-20 top-1/2 -translate-y-1/2 -rotate-90 text-3xl font-cinzel font-semibold text-yellow-50"
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 z-50 text-puple-950 font-cormorant font-bold text-xl bg-purple-200/50 w-full text-center"
             style={{ willChange: 'transform' }}
           >
             THE GROOM
