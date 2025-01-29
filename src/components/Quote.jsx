@@ -3,7 +3,6 @@
 import React from 'react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-/* eslint-disable no-undef */
 const Quote = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
