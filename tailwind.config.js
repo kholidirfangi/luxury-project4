@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        arima: ['"Arima", serif'],
-        cormorant: ['"Cormorant", serif'],
+        'great-vibes': ['"Great Vibes", serif'],
+        poppins: ['"Poppins", serif'],
       },
     },
   },

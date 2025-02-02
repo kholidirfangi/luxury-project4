@@ -51,7 +51,7 @@ const BankCard = memo(({ bankName, accountNumber, accountHolder }) => {
 
   return (
     <div
-      className="shadow-lg bg-purple-50/50 rounded-lg py-3 flex flex-col gap-2 mb-5"
+      className="shadow-lg bg-sky-50/50 rounded-lg py-3 flex flex-col gap-2 mb-5"
       data-testid="bank-card"
     >
       <h3 className="font-bold text-xl mb-5">{bankName}</h3>
@@ -59,7 +59,7 @@ const BankCard = memo(({ bankName, accountNumber, accountHolder }) => {
       <p>A.N {accountHolder}</p>
       <button
         onClick={handleCopy}
-        className="bg-purple-950 hover:bg-purple-950/50 w-32 text-neutral-100 mx-auto rounded-full text-sm py-2 transition-colors"
+        className="bg-sky-950 hover:bg-sky-950/50 w-32 text-neutral-100 mx-auto rounded-full text-sm py-2 transition-colors"
         aria-label={`Copy ${bankName} account number`}
       >
         <FontAwesomeIcon icon={faCopy} className="mr-3" aria-hidden="true" />
@@ -97,21 +97,21 @@ const Gift = () => {
   return (
     <section
       id="gift"
-      className="font-arima py-20 bg-purple-900/80 px-5 text-center text-purple-950"
+      className="font-arima py-20 bg-gradient-to-b from-sky-950 to-sky-700 px-5 text-center text-sky-950"
     >
       <h1
         data-aos="fade-down"
-        className="text-3xl  font-bold mb-5 text-purple-50"
+        className="text-3xl font-great-vibes mb-5 text-sky-50"
       >
         Wedding Gift
       </h1>
-      <p data-aos="fade-down" className="text-purple-50">
+      <p data-aos="fade-down" className="text-sky-50">
         Bagi Bapak/Ibu/Saudara/i ingin mengirimkan hadiah pernikahan dapat
         melalui virtual account di bawah ini:
       </p>
       <button
-        data-aos="fade-down"
-        className="flex justify-center items-center my-5 border-2 py-1 px-4 rounded-full bg-purple-50 hover:bg-purple-950 hover:text-purple-50 transition-colors mx-auto"
+        data-aos="fade-right"
+        className="flex justify-center items-center my-5 border-2 py-1 px-4 rounded-full bg-sky-50 hover:bg-sky-950 hover:text-sky-50 transition-colors mx-auto"
         onClick={toggleBankList}
         aria-expanded={isClick}
         aria-controls="creditCard"

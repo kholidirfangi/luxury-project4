@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <main className="w-full flex justify-center bg-gradient-to-br from-neutral-900 to-neutral-700">
-      <div className="realtive bg-white font-lato max-w-md overflow-x-hidden">
+      <div className="relative bg-white max-w-md overflow-x-hidden">
         <Audio isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
         <Amplop isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
         <Hero />
@@ -29,7 +29,7 @@ const App = () => {
         <LoveStory />
         <Gallery />
         <Gift />
-        <Rsvp collectionName={'luxury-demo3'} />
+        <Rsvp collectionName={'luxury-demo4'} />
         <Thankyou />
         <Footer />
       </div>

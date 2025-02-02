@@ -20,7 +20,7 @@ const Hero = () => {
     arrows: false,
     lazyLoad: 'progressive',
     pauseOnHover: false,
-    rtl: true,
+    rtl: false,
   };
 
   return (
@@ -40,18 +40,18 @@ const Hero = () => {
           ))}
         </Slider>
       </div>
-      <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-purple-50/20 from-10% via-purple-50/20 via-30% to-purple-950/50 to-90% z-40"></div>
+      <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-sky-50/20 from-10% via-sky-50/20 via-30% to-sky-950/70 to-90% z-40"></div>
       <div className="absolute w-full px-5 bottom-20 left-1/2 -translate-x-1/2 text-white text-shadow z-50 py-3 rounded-t-3xl text-center">
-        <h3 className="font-cormorant text-lg">THE WEDDING OF</h3>
+        <h3 className="font-poppins">THE WEDDING OF</h3>
         <h1
           data-aos="zoom-out"
-          className="font-cormorant font-bold text-4xl my-3"
+          className="font-great-vibes text-5xl my-5"
         >
           Putri & Putra
         </h1>
         <div className="flex w-full justify-center py-3">
           <div>
-            <div className="text-2xl font-cormorant">31 - 1 - 2025</div>
+            <div className="text-2xl font-great-vibes">31 - 1 - 2025</div>
           </div>
         </div>
       </div>

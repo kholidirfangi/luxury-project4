@@ -13,7 +13,7 @@ const Footer = () => {
   // Encode pesan untuk URL
   const encodedMessage = encodeURIComponent(message);
   return (
-    <footer className="bg-purple-950 text-neutral-100 py-14 px-5">
+    <footer className="bg-sky-950 text-neutral-100 py-14 px-5">
       <div className="flex justify-between">
         <div className="flex flex-col gap-3 justify-center">
           <div>

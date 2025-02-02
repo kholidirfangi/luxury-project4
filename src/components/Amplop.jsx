@@ -52,26 +52,25 @@ const Amplop = () => {
   return (
     <>
       <section className="h-screen amplop">
-        <div className="relative bg-gradient-to-t from-purple-950/50 from-10% via-black/10 via-25% to-black/10 to-90% text-white h-screen flex justify-center items-center text-center">
+        <div className="relative bg-gradient-to-t from-sky-950/50 from-10% via-black/10 via-25% to-black/10 to-90% text-white h-screen flex justify-center items-center text-center">
           <div className="mt-52">
-            <h3 data-aos="zoom-in" className='font-cormorant text-xl'>THE WEDDING OF</h3>
-            <h1
-              data-aos="zoom-in"
-              className="font-arima text-4xl my-5"
-            >
+            <h3 data-aos="zoom-in" className="font-poppins">
+              THE WEDDING OF
+            </h3>
+            <h1 data-aos="zoom-in" className="font-great-vibes text-5xl my-5">
               Putri & Putra
             </h1>
-            <h3 data-aos="zoom-in" className="text-lg my-10 font-arima">
+            <h3 data-aos="zoom-in" className="my-10 font-poppins">
               Kepada Yth.{' '}
               <div className="font-semibold mt-5">{formatName(guestName)}</div>
             </h3>
             <button
               data-aos="zoom-in"
               onClick={handleInvitationOpened}
-              className="mt-5 text-center bg-purple-900/80 py-2 px-3 mx-auto rounded-full text-white animate-bounce"
+              className="mt-5 text-center bg-sky-500 py-2 px-3 mx-auto rounded-lg text-white animate-bounce"
             >
               <FontAwesomeIcon icon={isOpen ? faEnvelopeOpen : faEnvelope} />
-              <span className="ml-2 font-arima">
+              <span className="ml-2 font-poppins">
                 {isOpen ? 'Undangan Terbuka' : 'Buka Undangan'}
               </span>
             </button>

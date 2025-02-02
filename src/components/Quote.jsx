@@ -59,16 +59,9 @@ const Quote = () => {
   return (
     <section
       id="quote"
-      className="relative -mt-10 rounded-t-[32px] z-40 text-center px-10 py-20 bg-purple-50 font-cormorant"
+      className="px-10 relative text-center py-20 bg-sky-200 font-poppins text-sky-950"
     >
-      <div className="h-1 w-20 bg-purple-950 rounded-full mx-auto -mt-16 mb-10"></div>
-      <div className="font-arima text-xl">Special Day</div>
-      <div data-aos="flip-left" className="flex justify-evenly mb-20 mt-10">
-        <CountdownItem value={timeLeft.days} label="Hari" />
-        <CountdownItem value={timeLeft.hours} label="Jam" />
-        <CountdownItem value={timeLeft.minutes} label="Menit" />
-        <CountdownItem value={timeLeft.seconds} label="Detik" />
-      </div>
+      <div data-aos='flip-left' className="font-great-vibes text-3xl mb-10">Special Day</div>
 
       <div>
         <p data-aos="fade-up">
@@ -80,6 +73,13 @@ const Quote = () => {
         <p data-aos="fade-up" className="mt-10">
           Q.S Ar-Rum : 21
         </p>
+      </div>
+
+      <div data-aos="zoom-in" className="flex justify-evenly mb-20 mt-10">
+        <CountdownItem value={timeLeft.days} label="Hari" />
+        <CountdownItem value={timeLeft.hours} label="Jam" />
+        <CountdownItem value={timeLeft.minutes} label="Menit" />
+        <CountdownItem value={timeLeft.seconds} label="Detik" />
       </div>
     </section>
   );
