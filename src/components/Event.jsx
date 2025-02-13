@@ -97,7 +97,7 @@ const Event = () => {
                 <p>Kediaman Mempelai Wanita</p>
                 <p>Jl. Cilandak KKO, Jakarta Selatan</p>
                 <a
-                  href=""
+                   href="https://maps.app.goo.gl/JNtvKC85kEvGGiSL7"
                   className="inline-block p-1 border-2 w-36 text-center rounded-lg text-sm hover:bg-sky-700 hover:text-white my-5"
                 >
                   Google Maps
@@ -154,7 +154,7 @@ const Event = () => {
                 <p>Kediaman Mempelai Wanita</p>
                 <p>Jl. Cilandak KKO, Jakarta Selatan</p>
                 <a
-                  href=""
+                   href="https://maps.app.goo.gl/JNtvKC85kEvGGiSL7"
                   className="inline-block p-1 border-2 w-36 text-center rounded-lg text-sm hover:bg-sky-700 hover:text-white my-5"
                 >
                   Google Maps
@@ -212,7 +212,7 @@ const Event = () => {
                 <p>Kediaman Mempelai Wanita</p>
                 <p>Jl. Cilandak KKO, Jakarta Selatan</p>
                 <a
-                  href=""
+                   href="https://maps.app.goo.gl/JNtvKC85kEvGGiSL7"
                   className="inline-block p-1 border-2 w-36 text-center rounded-lg text-sm hover:bg-sky-700 hover:text-white my-5"
                 >
                   Google Maps

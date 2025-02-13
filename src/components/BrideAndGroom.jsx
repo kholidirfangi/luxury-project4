@@ -5,16 +5,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Slider from 'react-slick';
 
 // Constants outside component to prevent recreation
-const IMAGES1 = [
-  './images/couple-1.webp',
-  './images/couple-2.webp',
-  './images/couple-3.webp',
+const bride = [
+  './images/bride2.webp',
+  './images/bride5.webp',
+  './images/bride8.webp',
 ];
 
-const IMAGES2 = [
-  './images/couple-1.webp',
-  './images/couple-3.webp',
-  './images/couple-2.webp',
+const groom = [
+  './images/groom1.webp',
+  './images/groom2.webp',
+  './images/groom4.webp',
 ];
 
 // Base slider settings
@@ -105,7 +105,7 @@ const BrideAndGroom = () => {
           >
             THE BRIDE
           </div>
-          <ImageSlider settings={sliderSettings1} data={IMAGES1} />
+          <ImageSlider settings={sliderSettings1} data={bride} />
         </div>
         <Profile
           name="Putri Cantika Sari"
@@ -124,7 +124,7 @@ const BrideAndGroom = () => {
           >
             THE GROOM
           </div>
-          <ImageSlider settings={sliderSettings2} data={IMAGES2} />
+          <ImageSlider settings={sliderSettings2} data={groom} />
         </div>
         <Profile
           name="Putra Andika Dwi Pangga"

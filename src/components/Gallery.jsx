@@ -1,6 +1,9 @@
 const Gallery = () => {
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-b from-sky-300 to-sky-950">
+    <section
+      id="gallery"
+      className="py-20 bg-gradient-to-b from-sky-300 to-sky-950"
+    >
       <h1
         data-aos="fade-down"
         className="text-3xl text-sky-950 text-center font-great-vibes mb-10"
