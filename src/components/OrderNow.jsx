@@ -1,7 +1,7 @@
 const orderNow = () => {
   const phoneNumber = '6281384528791';
   const message =
-    'Halo, saya ingin pesan undangan digital dengan thema Luxury-1 kak';
+    'Halo, saya ingin pesan undangan digital dengan thema Luxury-04 kak';
 
   // Encode pesan untuk URL
   const encodedMessage = encodeURIComponent(message);
