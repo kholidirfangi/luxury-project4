@@ -12,6 +12,7 @@ import LoveStory from './components/LoveStory';
 import Quote from './components/Quote';
 import Rsvp from './components/Rsvp';
 import Thankyou from './components/Thankyou';
+import OrderNow from './components/OrderNow';
 
 const App = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -33,6 +34,7 @@ const App = () => {
         <Thankyou />
         <Footer />
       </div>
+      <OrderNow />
     </main>
   );
 };
